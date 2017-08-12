@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vishnu.name %>
+</p>
+
+<p>
+  <strong>Designation:</strong>
+  <%= @vishnu.designation %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @vishnu.company %>
+</p>
+
+<%= link_to 'Edit', edit_vishnu_path(@vishnu) %> |
+<%= link_to 'Back', vishnus_path %>

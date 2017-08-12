@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Vishnus</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Designation</th>
+      <th>Company</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vishnus.each do |vishnu| %>
+      <tr>
+        <td><%= vishnu.name %></td>
+        <td><%= vishnu.designation %></td>
+        <td><%= vishnu.company %></td>
+        <td><%= link_to 'Show', vishnu %></td>
+        <td><%= link_to 'Edit', edit_vishnu_path(vishnu) %></td>
+        <td><%= link_to 'Destroy', vishnu, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vishnu', new_vishnu_path %>

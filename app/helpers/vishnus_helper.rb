@@ -1,0 +1,2 @@
+module VishnusHelper
+end
